@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Our stylesheet -->
+        <link href="styles.css" rel="stylesheet">
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Our own script -->
+        <script src="script.js"></script>
+        
+        <title>Advanced Search</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar nav-between">
+                <a href="index.html">
+                    <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg">
+                </a>
+                <ul>
+                    <li><a href="index.html">Google Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">Advanced Search</div>
+            <div class="advanced-search-container">
+                <div class="large-label">Find pages with...</div>
+                <form method="GET" action="https://www.google.com/search">
+                    <!-- Queries for the different search options can be checked by inspecting the input fields from google.com/advanced_search -->
+                    <div class="input-row">
+                        <div class="input-label">all these words:</div>
+                        <input class="advanced-search-input" type="text" autofocus name="as_q">
+                    </div>
+                    <div class="input-row">
+                        <div class="input-label">this exact word or phrase:</div>
+                        <input class="advanced-search-input" type="text" autofocus name="as_epq">
+                    </div>
+                    <div class="input-row">
+                        <div class="input-label">any of these words:</div>
+                        <input class="advanced-search-input" type="text" autofocus name="as_oq">
+                    </div>
+                    <div class="input-row">
+                        <div class="input-label">none of these words:</div>
+                        <input class="advanced-search-input" type="text" autofocus name="as_eq">
+                    </div>
+                    <div class="advanced-search-button-row">
+                        <button class="btn advanced-search-button" type="submit">Advanced Search</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
